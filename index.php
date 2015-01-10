@@ -1,5 +1,5 @@
 <?php
-if(isset($_GET['penislover123'])) {
+if(isset($_GET[getenv('APP_PW')])) {
 	setcookie("preview", "yes", time()+604800, "/");
 	header('Location: /');
 	exit;
